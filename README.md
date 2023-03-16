@@ -1,30 +1,6 @@
 # Overview
 This project contains prototype modules for making a simple product order management system based on micro-service architecture. It based on [Spring](https://spring.io/) framework using Spring Boot, Spring Cloud.
 
-# License
-This project is currently available under the [MIT](https://github.com/congcoi123/product-order-services/blob/master/LICENSE) License.
-
-# Installation
-You can get the sources:
-```
-git clone https://github.com/congcoi123/product-order-services.git
-```
-
-
-
-#### Configuration Service
-This service provides configurations for all other services (centralized configuration for all services).  
-See more: https://cloud.spring.io/spring-cloud-config/multi/multi__spring_cloud_config_server.html
-
-#### Gateway Service
-This service is responsible for mapping requests from a client to the desired service endpoint. It based on [Hystrix](https://github.com/Netflix/Hystrix). 
-
-#### Authentication Service
-Authorization Server for all other services which grants tokens for the backend resource services. All other secured services must set jwk uri for endpoint implemented on this service.
-
-#### Monitoring Service
-Monitoring an application's health and metrics helps us manage it better, notice unoptimized behavior and get closer to its performance. This especially holds true when we're developing a system with many microservices, where monitoring each service can prove to be crucial when it comes to maintaining our system.
-
 ### Feature Services
 This directory contains all bussiness services.
 
